@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Horoscope</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Get Your Random Horoscope</h1>
+        <form action="/horoscope" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="birthday">Your Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required><br>
+
+            <label for="category">Choose your horoscope category:</label>
+            <select id="category" name="category" required>
+                <option value="general">General</option>
+                <option value="love">Love</option>
+                <option value="career">Career</option>
+                <option value="health">Health</option>
+            </select><br><br>
+
+            <input type="submit" value="Get Horoscope">
+        </form>
+    </div>
+</body>
+</html>
