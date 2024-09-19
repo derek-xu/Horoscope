@@ -29,4 +29,12 @@ This is a simple Flask web application that takes a user's name and birthday as 
 
    ```bash
    git clone https://github.com/derek-xu/Horoscope.git
-   cd Horoscope
+2. Install the required dependencies
+   ```bash
+   pip3 install Flask
+   pip3 install requests
+3. Run the application
+   ```bash
+   python3 app.py
+   
+   
